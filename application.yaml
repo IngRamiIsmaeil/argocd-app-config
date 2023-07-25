@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: http://devops:3000/Ismaeil/argocd-app-config.git
+    repoURL: https://github.com/IngRamiIsmaeil/argocd-app-config.git
     targetRevision: HEAD
     path: dev
   destination:
