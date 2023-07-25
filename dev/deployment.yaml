@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-groovy
+  name: demo-groovy
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: demo-groovy
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
+  template:
+    metadata:
+      labels:
+        app: demo-groovy
+    spec:
+      containers:
+        - name: demo-groovy
+          image: localhost:5000/demo-groovy:v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8999
+              protocol: TCP
