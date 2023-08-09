@@ -10,9 +10,9 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 8999
+      port: 8080
       protocol: TCP
-      targetPort: 8999
+      targetPort: 8080
   selector:
     app: demo-groovy
   type: ClusterIP
