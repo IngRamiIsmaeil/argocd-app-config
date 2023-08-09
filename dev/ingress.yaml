@@ -10,6 +10,6 @@ spec:
         - prefix: "/"
       services:
         - name: demo-groovy
-          port: 8999
+          port: 8080
 
  
