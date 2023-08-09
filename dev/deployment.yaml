@@ -25,5 +25,5 @@ spec:
           image: localhost:5000/demo-groovy:v2
           imagePullPolicy: Always
           ports:
-            - containerPort: 8999
+            - containerPort: 8080
               protocol: TCP
