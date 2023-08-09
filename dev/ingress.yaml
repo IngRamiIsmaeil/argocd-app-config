@@ -9,7 +9,7 @@ spec:
     - conditions:
         - prefix: "/"
       services:
-        - name: groovy-app
+        - name: demo-groovy
           port: 8999
 
  
