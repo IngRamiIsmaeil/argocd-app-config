@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: demo-groovy
-          image: localhost:5000/demo:98
+          image: localhost:5000/demo:40
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
